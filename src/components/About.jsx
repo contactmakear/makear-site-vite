@@ -42,14 +42,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Excepturi recusandae distinctio nam consequatur facilis, 
-        adipisci ipsum dolorum, aut voluptatibus esse vel aperiam 
-        possimus animi tenetur magnam. Saepe tempora consectetur nobis 
-        sed laudantium id eos quis. Tempore quisquam suscipit esse 
-        totam est eos, doloribus sapiente? Nam consequatur blanditiis 
-        expedita, ullam ea doloremque cupiditate ut. Eaque nihil, ad 
-        quasi quaerat dolorum soluta!
+      MakeAR enables brands to adopt creative AR solutions for better ROI-focused campaigns. We can help in collecting user data, building a product launch buzz, target festive promotions, promote pack purchase and in many more things.Augmented reality marketing enhances customer experiences by overlaying digital content onto the physical world. We design end to end campaigns to make you stand out from your competition. 
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

@@ -27,6 +27,10 @@ import {
 
 export const navLinks = [
     {
+        id: "home",
+        title: "Home",
+    },
+    {
         id: "about",
         title: "About",
     },
@@ -42,21 +46,54 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Increase Sales and Conversion",
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "Collect first person data",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Run Loyalty Programs",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "Amplify Social Media",
         icon: creator,
     },
+    {
+        title: "Educate consumers about the product",
+        icon: creator,
+    },
+    {
+        title: "Integrate Sweepstakes",
+        icon: creator,
+    },
+    {
+        title: "Visualize the product ",
+        icon: creator,
+    },
+    {
+        title: "Tell the Brand Story",
+        icon: creator,
+    },
+    {
+        title: "Increase Re-Purchase",
+        icon: creator,
+    },
+    {
+        title: "Increase Instore sales",
+        icon: creator,
+    },
+    {
+        title: "Gamify the customer Experience",
+        icon: creator,
+    },
+    {
+        title: "D2C integration",
+        icon: creator,
+    },
+  
 ];
 
 const technologies = [
@@ -116,8 +153,8 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
+        title: "Milky Bar",
+        // company_name: "Starbucks",
         icon: starbucks,
         iconBg: "#383E56",
         date: "March 2020 - April 2021",
@@ -129,7 +166,7 @@ const experiences = [
         ],
     },
     {
-        title: "React Native Developer",
+        title: "Colgate",
         company_name: "Tesla",
         icon: tesla,
         iconBg: "#E6DEDD",
@@ -142,7 +179,7 @@ const experiences = [
         ],
     },
     {
-        title: "Web Developer",
+        title: "Kit Kat",
         company_name: "Shopify",
         icon: shopify,
         iconBg: "#383E56",
@@ -155,7 +192,7 @@ const experiences = [
         ],
     },
     {
-        title: "Full stack Developer",
+        title: "SurfExcel",
         company_name: "Meta",
         icon: meta,
         iconBg: "#E6DEDD",

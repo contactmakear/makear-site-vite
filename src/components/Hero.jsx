@@ -15,12 +15,12 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Eugene</span>
+          <h1 className={`${styles.heroHeadText} text-white mt-5`}>
+            Welcome To <span className='text-[#915EFF]'>MakeAR</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Try use 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+          <p className={`${styles.heroSubText} mb-5 text-white-100`}>
+            One Stop Solution <br className='sm:block hidden' />
+           For Promotional Marketing.
           </p>
         </div>
       </div>

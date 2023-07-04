@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html::-webkit-scrollbar
+{
+   width: 4px;
+   scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +81,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.makeArlogo{
+  width: 153px;
+  height: 62px;
+}
+.herotext #herotext{
+  font-size: 12px;
+}
 .blue-text-gradient {
   /* background: -webkit-linear-gradient(#eee, #333); */
   background: #56ccf2;
