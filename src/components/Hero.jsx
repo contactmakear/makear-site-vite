@@ -20,7 +20,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mb-5 text-white-100`}>
             One Stop Solution <br className='sm:block hidden' />
-           For Promotional Marketing.
+           For Augumented Reality Marketing.
           </p>
         </div>
       </div>

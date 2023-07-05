@@ -13,6 +13,7 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: '',
     email: '',
+    phone:'',
     message: '',
   });
 
@@ -26,16 +27,16 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.send(
-      'service_lqpyxd1', 
-      'template_3ty9whb', 
+      'service_i4i9grq', 
+      'template_krxsrmd', 
       {
         from_name: form.name,
-        to_name: 'Eugene',
+        to_name: 'MakeAr',
         from_email: form.email,
-        to_email: 'fromzpcity@gmail.com',
+        to_email: 'syed.riyaz@makear.io',
         message: form.message
       },
-      'kk5oM2vPMYsBD367x'
+      '5wab_RtRe2V53wGPB'
       ).then(() => {
         setLoading(false);
         // alert("Thank you for letter");
@@ -62,8 +63,8 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        {/* <p className={styles.sectionSubText}>Get in touch</p> */}
+        <h3 className={styles.sectionHeadText}>Contact</h3>
 
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <label className='flex flex-col'>
@@ -87,6 +88,16 @@ const Contact = () => {
             />
           </label>
           <label className='flex flex-col'>
+            <span className='text-white font-medium mb-4'>Phone</span>
+            <input
+              type="text" name="email" placeholder="What's your phone number?"
+              onChange={handleChange}
+              value={form.phone} 
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white 
+                rounded-lg outlined-none border-none font-medium'
+            />
+          </label>
+          <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
               name="message" placeholder="What's your message?" rows={7}
@@ -99,8 +110,8 @@ const Contact = () => {
 
           <button 
             type="submit" 
-            className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold 
-            shadow-md shadow-primary rounded-xl'
+            className=' send bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold 
+            shadow-md shadow-primary rounded-xl '
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
@@ -114,16 +125,6 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
     </div>
-
-    {/* <div id='alertNoti' class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
-  <div class="flex">
-    <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
-    <div>
-      <p class="font-bold">Our privacy policy has changed</p>
-      <p class="text-sm">Make sure you know how these changes affect you.</p>
-    </div>
-  </div>
-</div> */}
     </>
 
   );
