@@ -7,6 +7,27 @@ import { services } from '../constans';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import nestle from '../assets/tech/nestle.png'
+import mondelez from '../assets/tech/mondelez.png'
+import colpal from '../assets/tech/colpal.png'
+import nangrow from '../assets/tech/nangrow.png'
+import munch from '../assets/tech/munch.png'
+import surf  from '../assets/tech/surf excel.png'
+import street   from '../assets/tech/street art for mankind.png'
+import ogilvy   from '../assets/tech/ogilvy.png'
+import milkybar   from '../assets/tech/milkybar.png'
+import lactogen   from '../assets/tech/lactogen.png'
+import nescafe   from '../assets/tech/nescafe.png'
+import ajio   from '../assets/tech/ajio.png'
+import hul  from '../assets/tech/HUL.png' 
+import kitkat  from '../assets/tech/kitkat.png'
+import nan  from '../assets/tech/nan exella pro.png'
+import reliance  from '../assets/tech/reliance.png'
+
+
+
+
+
+
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -36,24 +57,24 @@ const Client = () => {
   <h1 className='whatyouget  mb-10 gap-10'>Our Trusted Partners</h1>
       <div className="mt-6 flex flex-wrap gap-10">
        <div className='client'>
+       <img className='brad' src={mondelez}/>
         <img className='brad' src={nestle}/>
-        <img className='brad' src='./src/assets/tech/kitkat.png'/>
-        <img className='brad' src='./src/assets/tech/reliance.png'/>
-        <img className='brad' src='./src/assets/tech/surf excel.png'/>
-        <img className='brad' src='./src/assets/tech/nestle.png'/>
-        <img className='brad munc' src='./src/assets/tech/munch.png'/>
-        <img className='brad' src='./src/assets/tech/colpal.png'/>
-        <img className='brad ' src='./src/assets/tech/HUL.png'/>
-        <img className='brad' src='./src/assets/tech/lactogen.png'/>
-        <img className='brad ' src='./src/assets/tech/nescafe.png'/>
-        <img className='brad' src='./src/assets/tech/milkybar.png'/>
-        <img className='brad' src='./src/assets/tech/nan exella pro.png'/>
-        <img className='brad' src='./src/assets/tech/nangrow.png'/>
-        <img className='brad' src='./src/assets/tech/ogilvy.png'/>
-        <img className='brad' src='./src/assets/tech/street art for mankind.png'/>
-        <img className='brad' src='./src/assets/tech/mongos.png'/>
+        <img className='brad' src={colpal}/>
+        <img className='brad' src={munch}/>
+        <img className='brad' src={surf}/>
+        <img className='brad munc' src={street}/>
+        <img className='brad' src={ogilvy}/>
+        <img className='brad ' src={milkybar}/>
+        <img className='brad' src={lactogen }/>
+        <img className='brad ' src={nescafe}/>
+        <img className='brad' src={ajio}/>
+        <img className='brad' src={hul}/>
+        <img className='brad' src={kitkat}/>
+        <img className='brad' src={nan}/>
+        <img className='brad' src={reliance}/>
+        {/* <img className='brad' src='./src/assets/tech/mongos.png'/>
         <img className='brad ' src='./src/assets/tech/ajio.png'/>
-        <img className='brad' src='./src/assets/tech/mondelez.png'/>
+        <img className='brad' src='./src/assets/tech/mondelez.png'/> */}
 
 
 

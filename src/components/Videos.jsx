@@ -6,6 +6,14 @@ import { styles } from '../styles';
 import { services } from '../constans';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import gif1 from '../assets/cadbury pop heart_VP9.webm'
+import gif2 from '../assets/phone-screen_VP9.webm'
+import gif3 from '../assets/ponds_VP9.webm'
+import gif4 from '../assets/spotless-runner_VP9.webm'
+
+
+
+
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -37,16 +45,16 @@ const Videos = () => {
       <div className="mt-6 flex flex-wrap gap-10">
        <div className='Videos'>
        <video  className='vid' loop autoPlay muted>
-        <source  src="src/assets/phone-screen_VP9.webm" type="video/webm" />
+        <source  src={gif1} type="video/webm" />
       </video>
       <video className='vid'  loop autoPlay muted>
-        <source   src="/src/assets/ponds_VP9.webm" type="video/webm" />
+        <source   src={gif2} type="video/webm" />
       </video>
       <video className='vid' loop autoPlay muted>
-        <source  src="src/assets/spotless-runner_VP9.webm" type="video/webm" />
+        <source  src={gif3} type="video/webm" />
       </video>
       <video className='vid' loop autoPlay muted>
-        <source  src="src/assets/cadbury pop heart_VP9.webm" type="video/webm" />
+        <source  src={gif4} type="video/webm" />
       </video>
       
 
