@@ -55,75 +55,43 @@ const Contact = () => {
         alert("Something went wrong..");
       });
   };
-
+  const redirectToEmail = () => {
+    window.location.href = 'mailto:contact@makear.io';
+  };
+  // const openContact = ()=>{
+  //   alert("phoneNumber = +9818051166")
+  // }
+  const phoneNumber = '+9818051166';
   return (
     <>
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
-      <motion.div
+      {/* <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        {/* <p className={styles.sectionSubText}>Get in touch</p> */}
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+      
+       
 
-        <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type="text" name="name" placeholder="What's your name?"
-              onChange={handleChange}
-              value={form.name} 
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white 
-                rounded-lg outlined-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Email</span>
-            <input
-              type="text" name="email" placeholder="What's your email?"
-              onChange={handleChange}
-              value={form.email} 
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white 
-                rounded-lg outlined-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Phone</span>
-            <input
-              type="text" name="email" placeholder="What's your phone number?"
-              onChange={handleChange}
-              value={form.phone} 
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white 
-                rounded-lg outlined-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              name="message" placeholder="What's your message?" rows={7}
-              onChange={handleChange}
-              value={form.message} 
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white 
-                rounded-lg outlined-none border-none font-medium'
-            ></textarea>
-          </label>
-
-          <button 
-            type="submit" 
-            className=' send bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold 
-            shadow-md shadow-primary rounded-xl '
-          >
-            {loading ? 'Sending...' : 'Send'}
-          </button>
-        </form>
-      </motion.div>
-
+      
+      </motion.div> */}
+  <div class="footer-content">
+            {/* <h3>MakeAr</h3> */}
+            {/* <p>Raj Template is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p> */}
+            <ul class="socials">
+                <li><a onClick={redirectToEmail} href="mailto:contact@makear.io"><i class="fa fa-envelope"></i></a></li>
+                <li><a href={`tel:${phoneNumber}`}><i class='fa fa-phone'></i></a></li>
+                <li><a href="https://www.linkedin.com/company/makear-io/mycompany/"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 xl:h-[600px] md:h-[550px] h-[350px]"
       >
+       
         <EarthCanvas />
       </motion.div>
+
+    
     </div>
     </>
 

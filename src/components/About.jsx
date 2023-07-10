@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
-
+import '../index.css'
 import { styles } from '../styles';
 import { services } from '../constans';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -20,9 +20,9 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[160px] flex justify-evenly items-center flex-col "
         >
-          <img src={icon} alt="service" className="w-24 h-24 object-contain" />
+          {/* <img src={icon} alt="service" className="w-24 h-24 object-contain" /> */}
           <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
         </div>
       </motion.div>
@@ -42,10 +42,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-      MakeAR enables brands to adopt creative AR solutions for better ROI-focused campaigns. We can help in collecting user data, building a product launch buzz, target festive promotions, promote pack purchase and in many more things.Augmented reality marketing enhances customer experiences by overlaying digital content onto the physical world. We design end to end campaigns to make you stand out from your competition. 
+      MakeAR enables brands to adopt creative AR solutions for better ROI-focused campaigns.Augmented reality marketing enhances customer experiences by overlaying digital content onto the physical world. We design end to end campaigns to make you stand out from your competition. 
       </motion.p>
-
-      <div className="mt-20 flex flex-wrap gap-10">
+      <br/>
+      <br/>
+  <h1 className='whatyouget  mb-10 gap-10'>What you get</h1>
+      <div className="mt-16 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

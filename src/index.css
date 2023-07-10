@@ -21,9 +21,54 @@ html::-webkit-scrollbar
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+.hovering :hover{
+  box-shadow: 0 0 5px cyan,0 0 25px cyan 0 0 50px cyan 0 0 75px cyan 0 0 100px cyan;
+}
 /* ------------------------------- */
+.pop{
+  color: #e11b4c;
+}
+.client{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+.videowebm{
+  max-width: 27% !important;
+  height: auto;
+  display: flex;
 
+ 
+}
+.htx{
+  width: 30px;
+  height: 36px;
+}
+.Videos{
+  flex-wrap: wrap;
+  display: flex;
+}
+.vid{
+  max-width: 25% !important;
+  height: auto;
 
+}
+.brad{
+  height: 100px;
+  margin: 20px;
+  /* filter: brightness(0) invert(1); */
+  margin-right: 39px;
+  filter: blackscale(100%);
+
+}
+.whatyouget{
+  font-size: 35px;
+  font-weight: 700;
+ text-align: center;
+ font-family: "Poppins", sans-serif;
+
+}
 footer{
   position: absolute;
   bottom: 0;
@@ -40,6 +85,7 @@ footer{
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin: 66px;
 }
 .footer-content h3{
   font-size: 2.1rem;

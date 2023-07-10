@@ -3,6 +3,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import Footer from './components/Footer';
+import Client from './components/Client';
+import Videos from './components/Videos';
 
 const App = () => {
   return (
@@ -14,15 +16,17 @@ const App = () => {
         </div>
 
         <About />
-        <Experience />
-        <Tech />
+        {/* <Experience /> */}
+        <Videos/>
+        <Client/>
+        {/* <Tech /> */}
+        
         {/* <Works /> */}
-        <Feedbacks />
+        {/* <Feedbacks /> */}
 
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
-          <Footer/>
         </div>
         
       </div>

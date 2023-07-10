@@ -22,21 +22,19 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
+   
+
+   
 } from "../assets";
 
 export const navLinks = [
-    // {
-    //     id: "home",
-    //     title: "Home",
-    // },
+    {
+        id: "",
+        title: "Home",
+    },
     {
         id: "about",
         title: "About",
-    },
-    {
-        id: "work",
-        title: "Work",
     },
     {
         id: "contact",
@@ -46,53 +44,54 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Increase Sales and Conversion",
-        icon: web,
+        title: "INCREASE SALES AND CONVERSION",
+        // icon: web,
     },
     {
-        title: "Collect first person data",
-        icon: mobile,
+        title: "COLLECT 1PD",
+        // icon: creator,
     },
     {
-        title: "Run Loyalty Programs",
-        icon: backend,
+        title: "RUN LOYALITY PROGRAM",
+        // icon: backend,
     },
     {
-        title: "Amplify Social Media",
-        icon: creator,
+        title: "AMPLIFY SOCIAL MEDIA",
+        // icon: creator,
     },
     {
-        title: "Educate consumers about the product",
-        icon: creator,
+        title: "EDUCATE CONSUMERS ABOUT THE PRODUCT",
+        // icon: creator,
     },
     {
-        title: "Integrate Sweepstakes",
-        icon: creator,
+        title: "INTEGRATE SWEEPSTAKES",
+        // icon: creator,
     },
     {
-        title: "Visualize the product ",
-        icon: creator,
+        title: "VISUALIZE THE PRODUCT ",
+        // icon: creator,
     },
     {
-        title: "Tell the Brand Story",
-        icon: creator,
+        title: "TELL THE BRAND STORY",
+        // icon: creator,
     },
     {
-        title: "Increase Re-Purchase",
-        icon: creator,
+        title: "INCREASE THE BRAND-REPURCHASE",
+        // icon: creator,
     },
     {
-        title: "Increase Instore sales",
-        icon: creator,
+        title: "INCREASE INSTORE SALES",
+        // icon: creator,
     },
     {
-        title: "Gamify the customer Experience",
-        icon: creator,
+        title: "GAMIFY THE CUSTOMER EXPERIENCE",
+        // icon: creator,
     },
     {
-        title: "D2C integration",
-        icon: creator,
+        title: "D2C INTEGRATION",
+        // icon: creator,
     },
+ 
   
 ];
 
@@ -133,10 +132,22 @@ const technologies = [
         name: "MongoDB",
         icon: mongodb,
     },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
+    // {
+    //     name: "Mongos",
+    //     icon: Mongos,
+    // },
+    // {
+    //     name: "Mong",
+    //     icon: Mong,
+    // },
+    // {
+    //     name: "Mon",
+    //     icon: Mon,
+    // },
+    // {
+    //     name: "Three JS",
+    //     icon: threejs,
+    // },
     {
         name: "git",
         icon: git,
@@ -157,7 +168,7 @@ const experiences = [
         // company_name: "Starbucks",
         icon: starbucks,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        // date: "March 2020 - April 2021",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -170,7 +181,7 @@ const experiences = [
         company_name: "Tesla",
         icon: tesla,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        // date: "Jan 2021 - Feb 2022",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -183,7 +194,7 @@ const experiences = [
         company_name: "Shopify",
         icon: shopify,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        // date: "Jan 2022 - Jan 2023",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -196,7 +207,7 @@ const experiences = [
         company_name: "Meta",
         icon: meta,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        // date: "Jan 2023 - Present",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -209,9 +220,9 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
+            "A super creative promotional goods agency . It is a amazing team which works with dedication and thinks out of the box Highly recommended",
+        name: "Pooja Ahuja",
+        designation: "",
         company: "Acme Co",
         image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
