@@ -33,18 +33,21 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.heroHeadText}>Overview.</h2>
+      {/* <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.heroHeadText}>Overview.</h2>
-      </motion.div>
-
-      <motion.p 
+      </motion.div> */}
+    <p className="mt-4 text-secondary text-[24px] max-w-3xl leading-[30px]  flex flex-wrap" >      MakeAR enables brands to adopt creative AR solutions for better ROI-focused campaigns.Augmented reality marketing enhances customer experiences by overlaying digital content onto the physical world. We design end to end campaigns to make you stand out from your competition. 
+</p>
+      {/* <motion.p 
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
       MakeAR enables brands to adopt creative AR solutions for better ROI-focused campaigns.Augmented reality marketing enhances customer experiences by overlaying digital content onto the physical world. We design end to end campaigns to make you stand out from your competition. 
       </motion.p>
-      <br/>
+      <br/> */}
       <br/>
   <h1 className='whatyouget  mb-10 gap-10'>What you get</h1>
       <div className="mt-16 flex flex-wrap gap-10">
