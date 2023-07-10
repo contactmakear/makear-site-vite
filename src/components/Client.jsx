@@ -6,7 +6,7 @@ import { styles } from '../styles';
 import { services } from '../constans';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-
+import nestle from '../assets/tech/nestle.png'
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -36,7 +36,7 @@ const Client = () => {
   <h1 className='whatyouget  mb-10 gap-10'>Our Trusted Partners</h1>
       <div className="mt-6 flex flex-wrap gap-10">
        <div className='client'>
-        <img className='brad' src='../assets/tech/nestle.png'/>
+        <img className='brad' src={nestle}/>
         <img className='brad' src='./src/assets/tech/kitkat.png'/>
         <img className='brad' src='./src/assets/tech/reliance.png'/>
         <img className='brad' src='./src/assets/tech/surf excel.png'/>
