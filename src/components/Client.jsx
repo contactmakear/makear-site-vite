@@ -22,6 +22,13 @@ import hul  from '../assets/tech/HUL.png'
 import kitkat  from '../assets/tech/kitkat.png'
 import nan  from '../assets/tech/nan exella pro.png'
 import reliance  from '../assets/tech/reliance.png'
+import colgate from '../assets/tech/colgate.png'
+import comfort from '../assets/tech/comfort.png'
+import dairymilk from '../assets/tech/dairymilk.png'
+import ponds from '../assets/tech/ponds.png'
+
+
+
 
 
 
@@ -54,7 +61,7 @@ const ServiceCard = ({ index, title, icon }) => {
 const Client = () => {
   return (
     <>
-  <h1 className='whatyouget  mb-10 gap-10'>Our Trusted Partners</h1>
+  <h1 className='whatyouget  mb-10 gap-10'>Trusted By</h1>
       <div className="mt-6 flex flex-wrap gap-10">
        <div className='client'>
        <img className='brad' src={mondelez}/>
@@ -72,9 +79,11 @@ const Client = () => {
         <img className='brad' src={kitkat}/>
         <img className='brad' src={nan}/>
         <img className='brad' src={reliance}/>
-        {/* <img className='brad' src='./src/assets/tech/mongos.png'/>
-        <img className='brad ' src='./src/assets/tech/ajio.png'/>
-        <img className='brad' src='./src/assets/tech/mondelez.png'/> */}
+        <img className='brad' src={ponds}/>
+        <img className='brad ' src={dairymilk}/>
+        <img className='brad' src={colgate}/>
+        <img className='brad' src={comfort}/>
+
 
 
 
