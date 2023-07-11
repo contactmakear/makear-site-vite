@@ -234,7 +234,9 @@ margin-bottom: 20px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.icons{
+  padding: 10px;
+}
 .green-text-gradient {
   background: #11998e;
   /* fallback for old browsers */
@@ -387,9 +389,18 @@ margin-bottom: 20px;
   .brad{
     margin: 20px;
   }
+
 }
 @media (max-width:320px) {
   .brad{
     margin: 20px;
+  }
+  .icons{
+    display: none;
+  }
+}
+@media (max-width:1024px) {
+  .icons{
+    display: block;
   }
 }
