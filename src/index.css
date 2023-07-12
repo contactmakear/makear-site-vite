@@ -35,6 +35,9 @@ html::-webkit-scrollbar
 .pop{
   color: #e11b4c;
 }
+.carheight{
+  min-height: 97px !important;
+}
 .client{
   display: flex;
   flex-wrap: wrap;

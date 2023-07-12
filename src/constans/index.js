@@ -75,14 +75,14 @@ const services = [
         title: "TELL THE BRAND STORY",
         // icon: creator,
     },
-    // {
-    //     title: "INCREASE THE BRAND-REPURCHASE",
-    //     // icon: creator,
-    // },
-    // {
-    //     title: "INCREASE INSTORE SALES",
-    //     // icon: creator,
-    // },
+    {
+        title: "INCREASE THE BRAND-REPURCHASE",
+        // icon: creator,
+    },
+    {
+        title: "INCREASE INSTORE SALES",
+        // icon: creator,
+    },
     // {
     //     title: "GAMIFY THE CUSTOMER EXPERIENCE",
     //     // icon: creator,

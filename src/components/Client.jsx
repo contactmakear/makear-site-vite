@@ -45,10 +45,10 @@ const ServiceCard = ({ index, title, icon }) => {
         <div
           options={{
             max: 45,
-            scale: 1,
+            scale: 2,
             speed: 450
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[160px] flex justify-evenly items-center flex-col "
+          className="bg-tertiary rounded-[20px] py-2 px-12  min-h-[160px] flex justify-evenly items-center flex-col "
         >
           {/* <img src={icon} alt="service" className="w-24 h-24 object-contain" /> */}
           <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>

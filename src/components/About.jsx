@@ -62,7 +62,7 @@ const About = () => {
       <br/>
       <br/>
   <h1 className='whatyouget  mb-10 gap-10'>What you get</h1>
-      <div className="mt-16 flex flex-wrap gap-8">
+      <div className="mt-10 flex  flex-wrap gap-8">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
