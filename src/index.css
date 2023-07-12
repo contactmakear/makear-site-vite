@@ -10,6 +10,9 @@ html::-webkit-scrollbar
    width: 4px;
    scroll-behavior: smooth;
 }
+.fa-angle-double-up{
+ font-size: 40px;
+}
 .send:hover{
   background-color: #f5af19;
 }

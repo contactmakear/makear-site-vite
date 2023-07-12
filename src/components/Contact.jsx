@@ -113,7 +113,7 @@ const Contact = () => {
     
     </div>
     <button className={`scrollTop ${showScroll ? 'show' : ''}`} onClick={scrollTop}>
-        Scroll to Top
+    <i className="fa fa-angle-double-up"></i>
       </button>
     </>
 
