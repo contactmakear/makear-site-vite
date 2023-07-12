@@ -7,7 +7,22 @@ import { services } from '../constans';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
+
+// var texts = ["Text 1", "Text 2", "Text 3", "Text 4"];
+// var currentIndex = 0;
+// var delay = 2000; 
+
+
 const ServiceCard = ({ index, title, icon }) => {
+
+  // function changeText() {
+  //   var dynamicText = document.getElementById("dynamicText");
+  //   dynamicText.textContent = texts[currentIndex];
+  //   currentIndex = (currentIndex + 1) % texts.length;
+  // }
+  
+  // // Set an interval to call the changeText function
+  // setInterval(changeText, delay);
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div 
@@ -47,7 +62,7 @@ const About = () => {
       <br/>
       <br/>
   <h1 className='whatyouget  mb-10 gap-10'>What you get</h1>
-      <div className="mt-16 flex flex-wrap gap-10">
+      <div className="mt-16 flex flex-wrap gap-8">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

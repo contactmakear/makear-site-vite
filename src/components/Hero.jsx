@@ -4,10 +4,31 @@ import { TypeAnimation } from 'react-type-animation';
 import rotate from '../assets/tech/rotate.png'
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-
+import { useState } from "react";
 const Hero = () => {
+  const [showScroll, setShowScroll] = useState(false);
+
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const scrollBottom = () => {
+    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+  };
+
+  window.addEventListener('scroll', checkScrollTop);
   return (
+    
     <section className={`relative w-full h-screen mx-auto w-3 h-3  bg-primary mb-1`}>
+      
      {/* <div>
      <img className="rot" src={rotate} />
      </div> */}
@@ -22,7 +43,9 @@ const Hero = () => {
           {/* <div className='w-1 sm:h-80 h-40  #e11b4c bg-gradient-to-r from-red-900 to-rose-900'violet-gradient /> */}
 
         </div>
-
+        {/* <button  className="scrollBottom" onClick={scrollBottom}>
+        <i class='far fa-arrow-alt-circle-down'></i>
+      </button> */}
         <div>
           {/* <h1 className={`${styles.heroHeadText} text-white mt-5`}>
             Welcome To <span className='text-[#e11b4c]'>MakeAR</span>

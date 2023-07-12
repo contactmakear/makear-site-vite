@@ -16,7 +16,25 @@ const Contact = () => {
     phone:'',
     message: '',
   });
+  const [showScroll, setShowScroll] = useState(false);
 
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const scrollBottom = () => {
+    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+  };
+
+  window.addEventListener('scroll', checkScrollTop);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
@@ -89,10 +107,14 @@ const Contact = () => {
       >
        
         <EarthCanvas />
+     
       </motion.div>
 
     
     </div>
+    <button className={`scrollTop ${showScroll ? 'show' : ''}`} onClick={scrollTop}>
+        Scroll to Top
+      </button>
     </>
 
   );

@@ -9,7 +9,27 @@ import { logo,makearlogo, menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  
 
+  const [showScroll, setShowScroll] = useState(false);
+
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const scrollBottom = () => {
+    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+  };
+
+  window.addEventListener('scroll', checkScrollTop);
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -24,7 +44,12 @@ const Navbar = () => {
             Eugene &nbsp; <span className="sm:block hidden">| Web Developer</span>
           </p> */}
         </Link>
-         
+        {/* <button className={`scrollTop ${showScroll ? 'show' : ''}`} onClick={scrollTop}>
+        Scroll to Top
+      </button> */}
+      {/* <button className="scrollBottom" onClick={scrollBottom}>
+        Scroll to Bottom
+      </button> */}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li key={link.id}

@@ -13,6 +13,13 @@ html::-webkit-scrollbar
 .send:hover{
   background-color: #f5af19;
 }
+.scrollBottom{
+  position: absolute;
+  z-index: 1;
+}
+.iconst{
+  color: rgb(89, 133, 40);
+}
 * {
   margin: 0;
   padding: 0;
