@@ -59,22 +59,22 @@ const services = [
         title: "AMPLIFY SOCIAL MEDIA",
         // icon: creator,
     },
-    // {
-    //     title: "EDUCATE CONSUMERS ABOUT THE PRODUCT",
-    //     // icon: creator,
-    // },
-    // {
-    //     title: "INTEGRATE SWEEPSTAKES",
-    //     // icon: creator,
-    // },
-    // {
-    //     title: "VISUALIZE THE PRODUCT ",
-    //     // icon: creator,
-    // },
-    // {
-    //     title: "TELL THE BRAND STORY",
-    //     // icon: creator,
-    // },
+    {
+        title: "EDUCATE CONSUMERS ABOUT THE PRODUCT",
+        // icon: creator,
+    },
+    {
+        title: "INTEGRATE SWEEPSTAKES",
+        // icon: creator,
+    },
+    {
+        title: "VISUALIZE THE PRODUCT ",
+        // icon: creator,
+    },
+    {
+        title: "TELL THE BRAND STORY",
+        // icon: creator,
+    },
     // {
     //     title: "INCREASE THE BRAND-REPURCHASE",
     //     // icon: creator,
