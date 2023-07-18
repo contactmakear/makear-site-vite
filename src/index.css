@@ -17,6 +17,7 @@ html::-webkit-scrollbar
   width: 50px;
   margin-right: 22px;
   position: fixed;
+  z-index: 5;
   animation: crescendo 1.5s alternate infinite ease-in;
 }
 

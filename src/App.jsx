@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import Client from './components/Client';
 import Videos from './components/Videos';
 // import Whatsap from './components/whatsap';
-
 const App = () => {
   return (
     <BrowserRouter>
@@ -18,13 +17,9 @@ const App = () => {
         </div>
 
         <About />
-        {/* <Experience /> */}
         <Videos/>
         <Client/>
-        {/* <Tech /> */}
-        
-        {/* <Works /> */}
-        {/* <Feedbacks /> */}
+       
 
         <div className='relative z-0'>
           <Contact />
