@@ -16,7 +16,14 @@ html::-webkit-scrollbar
 .whatsp{
  
   width: 82px;
- 
+  position: absolute;
+  z-index: 1;
+  margin-right: 22px;
+}
+.screen{
+  height: 89% !important;
+  position: absolute;
+  z-index: 1;
 }
 .send:hover{
   background-color: #f5af19;

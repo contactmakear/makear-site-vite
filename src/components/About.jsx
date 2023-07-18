@@ -67,7 +67,7 @@ const About = () => {
       </motion.p>
       <br/>
       {/* <Whatsap /> */}
-      <div >
+      {/* <div >
      <img   className='whatsp '
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"
       alt="Image"
@@ -75,7 +75,7 @@ const About = () => {
     })} 
      
     />
-   </div>
+   </div> */}
       <br/>
   <h1 className='whatyouget  mb-10 gap-10'>What you get</h1>
       <div className="mt-10 flex  flex-wrap gap-8">

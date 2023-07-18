@@ -90,7 +90,7 @@ const Hero = () => {
           Welcome To<span className='text-[#915EFF]'>  MakeAR</span>
           </h1>
         
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mb-4 text-white-100`}>
            One Stop Solution For Creative   <br className='sm:block hidden' />
            Tech Marketing 
           </p>
@@ -102,14 +102,14 @@ const Hero = () => {
         
       </div>
 
-      <ComputersCanvas />
+      <ComputersCanvas  />
    
 {/* <div>
 <img className="whatsap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"/>
 
 </div> */}
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-4 bottom-18 w-full flex justify-center items-center">
         <a href="#about">
           {/* <p>movable model</p> */}
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
@@ -125,16 +125,27 @@ const Hero = () => {
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
+
+            
             {/* <div className="flex items-end">
           <img className="whatsap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"/>
         </div> */}
           </div>
         </a>
+      
 
        
        
       </div>
-      
+      <div className="flex justify-end items-end outerwhatsap " >
+     <img   className='whatsp'
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"
+      alt="Image"
+      onClick={(()=>{      window.location.href = 'https://wa.me/9818051166';
+    })} 
+     
+    />
+   </div>
       {/* <div className="d-flex justify-content-end">
           <img className="whatsap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"/>
         </div> */}
