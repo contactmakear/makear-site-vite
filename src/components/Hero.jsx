@@ -31,11 +31,11 @@ const Hero = () => {
 
   const sendMessageToWhatsApp = () => {
     // Define the message you want to send
-    const message = 'Hello, this is an automated message!';
+    const message = 'Hi,  I would like to know more about augmented reality marketing solutions for my brand.';
   
     // Construct the URL with the necessary parameters
     const baseUrl = 'https://api.whatsapp.com/send';
-    const phoneNumber = '7676647262'; // Replace with the target phone number
+    const phoneNumber = '9818051166'; // Replace with the target phone number
     const queryParams = queryString.stringify({
       phone: phoneNumber,
       text: message,

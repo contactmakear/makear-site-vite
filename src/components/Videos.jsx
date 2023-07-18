@@ -56,9 +56,6 @@ const Videos = () => {
       <video className='vid' loop autoPlay muted>
         <source  src={gif4} type="video/webm" />
       </video>
-      
-
-
        </div>
       </div>
     </>
