@@ -167,6 +167,8 @@ const Hero = () => {
 
     //   // onClick={(()=>{      window.location.href = 'https://wa.me/9818051166';
     // })} 
+
+    
      
     />
    </div>
