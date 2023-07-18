@@ -14,9 +14,9 @@ html::-webkit-scrollbar
  font-size: 40px;
 }
 .whatsp{
- 
+ position: fixed;
   width: 82px;
-  position: absolute;
+  /* position: ; */
   z-index: 1;
   margin-right: 22px;
 }

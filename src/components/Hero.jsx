@@ -5,7 +5,7 @@ import rotate from '../assets/tech/rotate.png'
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { useState } from "react";
-import Whatsap from "./whatsap";
+import whatsaap from '../assets/tech/whatsapp.png'
 const Hero = () => {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -139,7 +139,7 @@ const Hero = () => {
       </div>
       <div className="flex justify-end items-end outerwhatsap " >
      <img   className='whatsp'
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"
+      src={whatsaap}
       alt="Image"
       onClick={(()=>{      window.location.href = 'https://wa.me/9818051166';
     })} 
