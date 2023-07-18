@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { useState } from "react";
 import whatsaap from '../assets/tech/whatsapp.png'
+import queryString from 'query-string';
+
 const Hero = () => {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -26,6 +28,24 @@ const Hero = () => {
   };
 
   window.addEventListener('scroll', checkScrollTop);
+
+  const sendMessageToWhatsApp = () => {
+    // Define the message you want to send
+    const message = 'Hello, this is an automated message!';
+  
+    // Construct the URL with the necessary parameters
+    const baseUrl = 'https://api.whatsapp.com/send';
+    const phoneNumber = '7676647262'; // Replace with the target phone number
+    const queryParams = queryString.stringify({
+      phone: phoneNumber,
+      text: message,
+    });
+    const url = `${baseUrl}?${queryParams}`;
+  
+    // Redirect the user to the WhatsApp API
+    window.location.href = url;
+  };
+  
   return (
     
     <section className={`relative w-full h-screen mx-auto w-3 h-3  bg-primary mb-1`}>
@@ -141,8 +161,12 @@ const Hero = () => {
      <img   className='whatsp'
       src={whatsaap}
       alt="Image"
-      onClick={(()=>{      window.location.href = 'https://wa.me/9818051166';
-    })} 
+      onClick={sendMessageToWhatsApp}
+
+    //   onClick={(()=>{     ;
+
+    //   // onClick={(()=>{      window.location.href = 'https://wa.me/9818051166';
+    // })} 
      
     />
    </div>
