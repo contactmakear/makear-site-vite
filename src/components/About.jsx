@@ -6,7 +6,7 @@ import { styles } from '../styles';
 import { services } from '../constans';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-
+import Whatsap from './whatsap';
 
 // var texts = ["Text 1", "Text 2", "Text 3", "Text 4"];
 // var currentIndex = 0;
@@ -46,13 +46,19 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const About = () => {
+  const Whatsap = () => {
+    const redirectToWhatsApp = () => {
+      window.location.href = 'https://wa.me/7676647262';
+    };
+  }
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.heroHeadText}>Overview.</h2>
+      
       </motion.div>
-
+  
       <motion.p 
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -60,6 +66,16 @@ const About = () => {
       MakeAR enables brands to adopt creative AR solutions for better ROI-focused campaigns.Augmented reality marketing enhances customer experiences by overlaying digital content onto the physical world. We design end to end campaigns to make you stand out from your competition. 
       </motion.p>
       <br/>
+      {/* <Whatsap /> */}
+      <div >
+     <img   className='whatsp '
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"
+      alt="Image"
+      onClick={(()=>{      window.location.href = 'https://wa.me/7676647262';
+    })} 
+     
+    />
+   </div>
       <br/>
   <h1 className='whatyouget  mb-10 gap-10'>What you get</h1>
       <div className="mt-10 flex  flex-wrap gap-8">

@@ -40,6 +40,8 @@ const Navbar = () => {
           }}
         >
           <img src={makearlogo} alt="logo" className='makeArlogo object-contain' />
+          {/* <img className="whatsap flex items-end" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"/> */}
+
           {/* <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Eugene &nbsp; <span className="sm:block hidden">| Web Developer</span>
           </p> */}

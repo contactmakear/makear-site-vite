@@ -5,6 +5,7 @@ import rotate from '../assets/tech/rotate.png'
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { useState } from "react";
+import Whatsap from "./whatsap";
 const Hero = () => {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -43,6 +44,7 @@ const Hero = () => {
           {/* <div className='w-1 sm:h-80 h-40  #e11b4c bg-gradient-to-r from-red-900 to-rose-900'violet-gradient /> */}
 
         </div>
+        
         {/* <button  className="scrollBottom" onClick={scrollBottom}>
         <i class='far fa-arrow-alt-circle-down'></i>
       </button> */}
@@ -87,15 +89,25 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
           Welcome To<span className='text-[#915EFF]'>  MakeAR</span>
           </h1>
+        
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
            One Stop Solution For Creative   <br className='sm:block hidden' />
            Tech Marketing 
           </p>
-       
+     
+          {/* <div className=''>
+        <img className="whatsap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"/>
+      </div>    */}
         </div>
+        
       </div>
 
       <ComputersCanvas />
+   
+{/* <div>
+<img className="whatsap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"/>
+
+</div> */}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
@@ -113,9 +125,20 @@ const Hero = () => {
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
+            {/* <div className="flex items-end">
+          <img className="whatsap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"/>
+        </div> */}
           </div>
         </a>
+
+       
+       
       </div>
+      
+      {/* <div className="d-flex justify-content-end">
+          <img className="whatsap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"/>
+        </div> */}
+    
     </section>
   );
 };

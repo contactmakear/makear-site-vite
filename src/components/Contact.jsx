@@ -115,12 +115,18 @@ const Contact = () => {
         <EarthCanvas />
        
       </motion.div>
+      {/* <div className='whatsp'>
+        <img className="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"/>
+      </div>    */}
 
      
     </div>
+   
     <button className={`scrollTop ${showScroll ? 'show' : ''}`} onClick={scrollTop}>
     <i className="fa fa-angle-double-up"></i>
       </button>
+
+     
     </>
 
   );

@@ -13,6 +13,11 @@ html::-webkit-scrollbar
 .fa-angle-double-up{
  font-size: 40px;
 }
+.whatsp{
+ 
+  width: 82px;
+ 
+}
 .send:hover{
   background-color: #f5af19;
 }
