@@ -71,7 +71,7 @@ const About = () => {
      <img   className='whatsp '
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"
       alt="Image"
-      onClick={(()=>{      window.location.href = 'https://wa.me/7676647262';
+      onClick={(()=>{      window.location.href = 'https://wa.me/9818051166';
     })} 
      
     />
