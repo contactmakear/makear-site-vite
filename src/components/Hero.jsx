@@ -157,7 +157,7 @@ const Hero = () => {
        
        
       </div>
-      <div className="flex justify-end items-end outerwhatsap " >
+      <div className="flex justify-end items-end  quadrado " >
      <img   className='whatsp'
       src={whatsaap}
       alt="Image"

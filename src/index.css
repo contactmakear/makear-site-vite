@@ -13,13 +13,18 @@ html::-webkit-scrollbar
 .fa-angle-double-up{
  font-size: 40px;
 }
-.whatsp{
- position: fixed;
-  width: 53px;
-  /* position: ; */
-  z-index: 1;
+.whatsp {
+  width: 50px;
   margin-right: 22px;
+  position: fixed;
+  animation: crescendo 1.5s alternate infinite ease-in;
 }
+
+@keyframes crescendo {
+  0%   {transform: scale(.8);}
+  100% {transform: scale(1.5);}
+}
+
 .screen{
   height: 89% !important;
   position: absolute;
