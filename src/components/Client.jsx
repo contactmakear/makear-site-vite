@@ -26,7 +26,9 @@ import colgate from '../assets/tech/colgate.png'
 import comfort from '../assets/tech/comfort.png'
 import dairymilk from '../assets/tech/dairymilk.png'
 import ponds from '../assets/tech/ponds.png'
-
+import hed from '../assets/tech/hed-logo.png'
+import kisses from '../assets/tech/kisses-logo.png'
+import hersheys from '../assets/tech/hersheys.png'
 
 
 
@@ -71,22 +73,21 @@ const Client = () => {
         <img className='brad' src={surf}/>
         <img className='brad munc' src={street}/>
         <img className='brad' src={ogilvy}/>
+        <img className='brad' src={hersheys}/>
         <img className='brad ' src={milkybar}/>
         <img className='brad' src={lactogen }/>
         <img className='brad ' src={nescafe}/>
         <img className='brad' src={ajio}/>
         <img className='brad' src={hul}/>
+        <img className='brad' src={kisses}/>
         <img className='brad' src={kitkat}/>
         <img className='brad' src={nan}/>
         <img className='brad' src={reliance}/>
         <img className='brad' src={ponds}/>
         <img className='brad ' src={dairymilk}/>
         <img className='brad' src={colgate}/>
+        <img className='brad' src={hed}/>
         <img className='brad' src={comfort}/>
-
-
-
-
        </div>
       </div>
     </>
