@@ -74,7 +74,7 @@ const Contact = () => {
       });
   };
   const redirectToEmail = () => {
-    window.location.href = 'mailto:contact@makear.io';
+    window.location.href = 'mailto:contact@makear.ai';
   };
   // const openContact = ()=>{
   //   alert("phoneNumber = +9818051166")
@@ -97,7 +97,7 @@ const Contact = () => {
             {/* <h3>MakeAr</h3> */}
             {/* <p>Raj Template is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p> */}
             <ul class="socials">
-                <li><a onClick={redirectToEmail} href="mailto:contact@makear.io"><i class="fa fa-envelope"></i></a>  <span className='icons'>      contact@makear.io</span></li>
+                <li><a onClick={redirectToEmail} href="mailto:contact@makear.ai"><i class="fa fa-envelope"></i></a>  <span className='icons'>      contact@makear.ai</span></li>
                 <li><a href={`tel:${phoneNumber}`}><i class='fa fa-phone'></i></a><span className='icons'>      Contact : 9818051166</span></li>
                 <li><a href="https://www.linkedin.com/company/makear-io/mycompany/"><i class="fa fa-linkedin-square"></i></a><span className='icons'>     Reach us @Linkedln</span></li>
                <div>
